@@ -1,0 +1,11 @@
+{
+    "host": "http://localhost:3000",
+    "dbURI": "mongodb+srv://yaniv:<password>@chatcatdb-qvsh8.mongodb.net/test?retryWrites=true",
+    "sessionSecret": "catscanfly",
+    "fb": {
+        "clientID": "672155346531651",
+        "clientSecret": "2b880e3156b9e51471bbff37848d572e",
+        "callbackURL": "//localhost:3000/auth/facebook/callback",
+        "profileFields": ["id", "displayName", "photos"]
+    }
+}
