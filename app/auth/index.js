@@ -23,7 +23,6 @@ module.exports = () => {
         // If not - Create one in the local db
         h.findOne(profile.id)
             .then(result => {
-                console.log("TEST3");
                 if(result) {
                     done(null, result);
                 } else {

@@ -27,9 +27,11 @@ let route = routes => {
 //Find a single user based on a key
 let findOne = profileID => {
     console.log("TEST2_1");
-    return db.userModel.findOne({
+    var query = db.userModel.findOne({
         'profileId': profileID
-    })
+    });
+    console.log("TEST2_3");
+    return query;
 }
 
 // Create a new user and returns his instance
