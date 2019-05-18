@@ -26,11 +26,9 @@ let route = routes => {
 
 //Find a single user based on a key
 let findOne = profileID => {
-    console.log("TEST2_1");
     var query = db.userModel.findOne({
         'profileId': profileID
     });
-    console.log("TEST2_3");
     return query;
 }
 
