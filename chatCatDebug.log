@@ -8,3 +8,15 @@
 {"level":"info","message":"DB Connected","timestamp":"2019-05-24T11:54:56.120Z"}
 {"level":"info","message":"DB Connected","timestamp":"2019-05-24T11:55:12.846Z"}
 {"level":"info","message":"DB Connected","timestamp":"2019-05-24T11:55:14.331Z"}
+{"level":"info","message":"DB Connected","timestamp":"2019-05-24T12:00:04.726Z"}
+{"level":"info","message":"DB Connected","timestamp":"2019-05-24T12:00:53.553Z"}
+{"level":"info","message":"DB Connected","timestamp":"2019-05-24T12:01:34.929Z"}
+{"level":"info","message":"DB Connected","timestamp":"2019-05-24T12:02:22.510Z"}
+{"level":"info","message":"DB Connected","timestamp":"2019-05-24T12:02:32.336Z"}
+{"level":"info","message":"DB Connected","timestamp":"2019-05-24T12:03:21.163Z"}
+{"level":"info","message":"::1 - - [24/May/2019:12:03:33 +0000] \"GET / HTTP/1.1\" 200 500 \"http://localhost:3000/rooms\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.1 Safari/605.1.15\"\n","timestamp":"2019-05-24T12:03:33.329Z"}
+{"level":"info","message":"::1 - - [24/May/2019:12:03:51 +0000] \"GET /auth/facebook HTTP/1.1\" 302 0 \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.1 Safari/605.1.15\"\n","timestamp":"2019-05-24T12:03:51.061Z"}
+{"level":"info","message":"::1 - - [24/May/2019:12:04:01 +0000] \"GET /auth/facebook/callback?code=AQBpO9NUi7D8w4oJO_DSbic2zucXPKqkvuBjRqJvgYxGdkt0FHEDUar804G7IhHX_n7oppBZZsFKjwkZ9ANBwxeoIB3SgyVWdd9bvSRSImqUcB8Dr7QRuvhy36E5XT1w1M8A8mEsmuAA8b8GM2nbibChdbYRlJ7QthU-Bz-Icr_mlMgOMJ-BdzXyNifU_yopcZ3bHh7-4GrdDqc3zToJZ1nDV6O-JtKEFYlFg9PHmYmj9-te5zc8Wsllku4GI2vEaE2OEtlZA-c9YdpxOAygP5a05gVO9ywTVuu4MaxW45A5d8zzG3-mi9C-6wgei0eGtOU HTTP/1.1\" 302 56 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.1 Safari/605.1.15\"\n","timestamp":"2019-05-24T12:04:01.004Z"}
+{"level":"info","message":"::1 - - [24/May/2019:12:04:01 +0000] \"GET /rooms HTTP/1.1\" 200 1911 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.1 Safari/605.1.15\"\n","timestamp":"2019-05-24T12:04:01.130Z"}
+{"level":"info","message":"::1 - - [24/May/2019:12:04:21 +0000] \"GET /chat/d84381ac93f11e04467c273235e816a254db7dab4c9a30b3 HTTP/1.1\" 200 3927 \"http://localhost:3000/rooms\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.1 Safari/605.1.15\"\n","timestamp":"2019-05-24T12:04:21.647Z"}
+{"level":"info","message":"::1 - - [24/May/2019:12:04:21 +0000] \"GET /favicon.ico HTTP/1.1\" 404 689 \"http://localhost:3000/chat/d84381ac93f11e04467c273235e816a254db7dab4c9a30b3\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.1 Safari/605.1.15\"\n","timestamp":"2019-05-24T12:04:21.998Z"}
