@@ -3,6 +3,7 @@ const passport = require('passport');
 const config = require('../config');
 const h = require('../helpers');
 const FacebookStrategy = require('passport-facebook').Strategy;
+const logger = require('../logger');
 
 module.exports = () => {
     passport.serializeUser((user, done) => {
@@ -12,7 +13,7 @@ module.exports = () => {
     passport.deserializeUser((id, done) => {
         h.findById(id)
             .then(user => done(null, user))
-            .catch(error => console.log('Error when deserializing the user'));
+            .catch(error => logger.log('error','Error when deserializing the user'));
     });
 
     let authProcessor = (accessToken, refreshToken, profile, done) => {
@@ -26,7 +27,7 @@ module.exports = () => {
                 } else {
                     h.createNewUser(profile)
                         .then(newChatUser => done(null, newChatUser))
-                        .catch(error => console.log('Error when creating new user'))
+                        .catch(error => logger.log('error', 'Error when creating new user'))
                 }
             });
     }
