@@ -15,8 +15,6 @@ module.exports = () => {
             .catch(error => console.log('Error when deserializing the user'));
     });
 
-    
-
     let authProcessor = (accessToken, refreshToken, profile, done) => {
         // Find a user in the local db using profile.id
         // If the user is found, return user data from db

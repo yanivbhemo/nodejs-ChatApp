@@ -7,5 +7,10 @@
         "clientSecret": "2b880e3156b9e51471bbff37848d572e",
         "callbackURL": "//localhost:3000/auth/facebook/callback",
         "profileFields": ["id", "displayName", "photos"]
+    },
+    "redis": {
+        "host": "127.0.0.1",
+        "port": 6379,
+        "password": ""
     }
 }

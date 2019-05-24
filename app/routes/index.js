@@ -1,6 +1,8 @@
 'use strict';
 const h = require('../helpers');
 const passport = require('passport');
+const config = require('../config');
+
 
 module.exports = () => {
     let routes = {
@@ -8,19 +10,34 @@ module.exports = () => {
             '/': (req,res,next) => {
                 res.render('login');
             },
-            '/rooms': (req, res, next) => {
+            '/rooms': [h.isAuthenticated, (req, res, next) => {
                 res.render('rooms', {
-                    user: req.user
+                    user: req.user,
+                    host: config.host
                 });
-            },
-            '/chat': (req, res, next) => {
-                res.render('chatroom');
-            },
+            }],
+            '/chat/:id': [h.isAuthenticated, (req, res, next) => {
+                let getRoom = h.findRoomById(req.app.locals.chatrooms, req.params.id);
+                if(getRoom === undefined) {
+                    return next();
+                } else {
+                    res.render('chatroom', {
+                        user: req.user,
+                        host: config.host,
+                        room: getRoom.room,
+                        roomID: getRoom.roomID
+                    });
+                }
+            }],
             '/auth/facebook': passport.authenticate('facebook'),
             '/auth/facebook/callback': passport.authenticate('facebook', {
                 successRedirect: '/rooms',
                 failureRedirect: '/'
-            })
+            }),
+            '/logout': [h.isAuthenticated, (req, res, next) => {
+                req.logout();
+                res.redirect('/');
+            }]
         },
         'post': {
             
