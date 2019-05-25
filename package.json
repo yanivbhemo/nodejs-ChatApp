@@ -9,7 +9,7 @@
   "author": "Yaniv B.H",
   "license": "ISC",
   "engines": {
-    "node": "4.2.2"
+    "node": "4.7.0"
   },
   "dependencies": {
     "bluebird": "^3.5.4",
